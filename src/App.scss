@@ -1,5 +1,6 @@
 @import "./index.scss";
 .App {
+  position: relative;
   text-align: center;
   .logo {
     margin: 0 auto;
@@ -25,7 +26,11 @@
     }
   }
 }
-
+.footer {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
 // .App-logo {
 //   height: 40vmin;
 //   pointer-events: none;
