@@ -1,7 +1,8 @@
 import React, { Component, useEffect, useState } from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.scss";
 import Home from "./components/home/home";
+import logo from "./logo.png";
 class App extends Component {
   state = {
     query: "",
@@ -33,13 +34,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <img className="logo" src={logo} />
         <form className="form">
           <input onChange={this.handleQuery} type="text" />
-          <button onClick={this.handleSubmit} className="button">
-            Submit
-          </button>
+          <div>
+            <button onClick={this.handleSubmit} className="button">
+              Submit
+            </button>
+          </div>
         </form>
-        <Home recipes={this.state.recipe}></Home>
+        <Home className="home" recipes={this.state.recipe}></Home>
       </div>
     );
   }

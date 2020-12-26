@@ -1,12 +1,14 @@
 @import "../../index.scss";
 .card {
+  transition: all 0.8s ease;
   background: $mainPink;
   width: 10rem;
   padding: 2rem;
-  margin: 1rem 1rem;
+  margin: 1rem auto;
+  box-sizing: auto;
   border-radius: 0.9rem;
   height: auto;
-  transition: all 0.8s ease;
+
   &:hover {
     background: $mainOrange;
     transform: scale(1.04);
@@ -17,5 +19,26 @@
   img {
     width: 10rem;
     border-radius: 0.9rem;
+  }
+  .title {
+    font-family: "Lobster Two", cursive;
+    font-weight: 600;
+  }
+}
+.button {
+  background: $mainPink;
+  margin: 0.5rem auto;
+  padding: 0.4rem;
+  border-radius: 0.6rem;
+  border: none;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+.calories {
+  font-family: "Josefin Sans", sans-serif;
+  p {
+    font-weight: bold;
   }
 }
