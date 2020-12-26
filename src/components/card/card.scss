@@ -1,0 +1,21 @@
+@import "../../index.scss";
+.card {
+  background: $mainPink;
+  width: 10rem;
+  padding: 2rem;
+  margin: 1rem 1rem;
+  border-radius: 0.9rem;
+  height: auto;
+  transition: all 0.8s ease;
+  &:hover {
+    background: $mainOrange;
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // width: 12rem;
+  }
+  // border: 10px solid black;
+  img {
+    width: 10rem;
+    border-radius: 0.9rem;
+  }
+}
