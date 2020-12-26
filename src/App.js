@@ -36,7 +36,11 @@ class App extends Component {
       <div className="App">
         <img className="logo" src={logo} />
         <form className="form">
-          <input onChange={this.handleQuery} type="text" />
+          <input
+            onChange={this.handleQuery}
+            type="text"
+            placeholder="Search a recipe"
+          />
           <div>
             <button onClick={this.handleSubmit} className="button">
               Submit
@@ -44,6 +48,15 @@ class App extends Component {
           </div>
         </form>
         <Home className="home" recipes={this.state.recipe}></Home>
+        <div className="project">
+          {" "}
+          <span>
+            Project By <span className="name">Akshat Soni</span>
+            <a href="https://github.com/akshatsoni15">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </span>
+        </div>
       </div>
     );
   }
